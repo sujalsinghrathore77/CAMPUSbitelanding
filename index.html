@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Campus Bite — Eat Smarter on Campus</title>
+  <meta name="description" content="The fastest way to eat on campus. Order, skip the line, pick up." />
+  <meta name="author" content="Campus Bite" />
+  <meta property="og:title" content="CampusBite — Skip the Queue" />
+  <meta property="og:description" content="Order ahead, skip the canteen line. Available at AIT Bangalore." />
+  <meta property="og:image" content="YOUR_SITE_URL/assets/logo.png" />
+  <meta property="og:url" content="YOUR_SITE_URL" />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/index.css" />
+</head>
+<body>
+
+  <!-- ═══════════════ NAVIGATION ═══════════════ -->
+  <header id="site-header">
+    <nav id="main-nav">
+      <a href="/" class="nav-brand" id="nav-brand">
+        <img src="/logo.png" alt="Campus Bite" class="nav-logo" />
+        <span class="nav-brand-text">Campus Bite</span>
+      </a>
+      <div class="pill-nav nav-links" id="nav-links">
+        <a href="#how">How it works</a>
+        <a href="#vendors">For vendors</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#download">Download</a>
+      </div>
+      <a href="#download" class="pill-nav nav-cta" id="nav-cta">Get the app</a>
+      <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+    <div class="mobile-menu" id="mobile-menu">
+      <a href="#how">How it works</a>
+      <a href="#vendors">For vendors</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#download">Download</a>
+    </div>
+  </header>
+
+  <!-- ═══════════════ HERO ═══════════════ -->
+  <section id="hero" class="hero-section">
+    <!-- Decorative paper planes -->
+    <div class="pp-teal plane-container" id="plane-teal" aria-hidden="true">
+      <svg viewBox="0 0 100 100" width="80" height="80">
+        <defs><linearGradient id="grad-teal" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#5EEAD4"/><stop offset="100%" stop-color="#2DD4BF"/></linearGradient></defs>
+        <polygon points="5,50 95,15 60,55 95,15 55,90 50,60" fill="url(#grad-teal)" stroke="rgba(0,0,0,0.15)" stroke-width="1" stroke-linejoin="round"/>
+        <polygon points="50,60 60,55 55,90" fill="rgba(0,0,0,0.12)"/>
+      </svg>
+    </div>
+    <div class="pp-pink plane-container" id="plane-pink" aria-hidden="true">
+      <svg viewBox="0 0 100 100" width="80" height="80">
+        <defs><linearGradient id="grad-pink" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#FF6B9D"/><stop offset="100%" stop-color="#FF8C42"/></linearGradient></defs>
+        <polygon points="5,50 95,15 60,55 95,15 55,90 50,60" fill="url(#grad-pink)" stroke="rgba(0,0,0,0.15)" stroke-width="1" stroke-linejoin="round"/>
+        <polygon points="50,60 60,55 55,90" fill="rgba(0,0,0,0.12)"/>
+      </svg>
+    </div>
+
+    <div class="hero-grid container">
+      <div class="hero-content">
+        <span class="hero-badge pp-reveal pp-reveal-1">For students &amp; campus eateries</span>
+        <h1 class="hero-title">
+          <span class="pp-reveal pp-reveal-1">Eat Smarter</span>
+          <span class="pp-reveal pp-reveal-2">on Campus</span>
+        </h1>
+        <p class="hero-desc pp-reveal pp-reveal-3">
+          The fastest way to eat on campus. Order ahead, skip the line, and grab your food between classes.
+        </p>
+        <div class="hero-actions pp-reveal pp-reveal-4">
+          <a href="#download" class="btn btn-primary" id="hero-download-btn">
+            Download app
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+          </a>
+          <a href="#vendors" class="btn btn-glass" id="hero-vendor-btn">I'm a vendor</a>
+        </div>
+        <div class="hero-trust scroll-reveal">
+          <span class="trust-item">⭐ 4.9/5 rating</span>
+          <span class="trust-divider">·</span>
+          <span class="trust-item">2,000+ students</span>
+          <span class="trust-divider">·</span>
+          <span class="trust-item">Free to download</span>
+        </div>
+      </div>
+
+      <!-- Phone mockup -->
+      <div class="hero-phone reveal" id="hero-phone-mockup">
+        <img src="/logo.png" alt="" class="hero-phone-logo float-slow" />
+        <div class="phone-mockup">
+          <div class="phone-status">
+            <span>9:41</span>
+            <span>Campus Bite</span>
+          </div>
+          <div class="phone-card">
+            <div class="phone-label">Pickup in</div>
+            <div class="phone-time">7 min</div>
+            <div class="phone-sub">Canteen</div>
+          </div>
+          <div class="phone-item">
+            <div class="phone-item-icon"></div>
+            <div class="phone-item-info">
+              <div class="phone-item-name">Gobi Manchurian</div>
+              <div class="phone-item-meta">₹45 · ready 12:14</div>
+            </div>
+            <svg class="phone-star" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          </div>
+          <div class="phone-ready">
+            <span>Order ready</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-hand hero-hand-left" aria-hidden="true">
+      <span>🤚</span>
+    </div>
+    <div class="hero-hand hero-hand-right" aria-hidden="true">
+      <span>🤙</span>
+    </div>
+  </section>
+
+  <div class="plane-divider-strip" aria-hidden="true">
+    <div class="plane-group">
+      <div class="plane-trail line-1"></div>
+      <div class="plane-trail line-2"></div>
+      <div class="plane-trail line-3"></div>
+      <span class="plane-emoji">✈️</span>
+    </div>
+  </div>
+
+  <!-- ═══════════════ HOW IT WORKS ═══════════════ -->
+  <section id="how" class="how-section">
+    <div class="how-section-scroll-driver" id="how-scroll-driver">
+      <div class="hiw-deck-viewport">
+        <div class="container">
+          <h2 class="how-title scroll-reveal">Order in seconds. Eat in minutes.</h2>
+          <div class="hiw-deck-stage" id="hiw-deck-stage">
+            <div class="hiw-card hiw-card-deck deck-active" data-card-index="0" style="--card-bg: #2ae081;">
+              <div class="hiw-card-content">
+                <span class="hiw-badge">STEP 01</span>
+                <h3 class="hiw-card-title">Open the App</h3>
+                <p class="hiw-card-body">Browse menus from every café and canteen on campus. Updated fresh every morning.</p>
+              </div>
+              <div class="hiw-card-icon" aria-hidden="true"><span>📱</span></div>
+            </div>
+            <div class="hiw-card hiw-card-deck" data-card-index="1" style="--card-bg: #FFD166;">
+              <div class="hiw-card-content">
+                <span class="hiw-badge">STEP 02</span>
+                <h3 class="hiw-card-title">Order &amp; Pay</h3>
+                <p class="hiw-card-body">Pick your meal, pay via UPI or card in two taps, and get a live pickup time instantly.</p>
+              </div>
+              <div class="hiw-card-icon" aria-hidden="true"><span>🧾</span></div>
+            </div>
+            <div class="hiw-card hiw-card-deck" data-card-index="2" style="--card-bg: #FF8C42;">
+              <div class="hiw-card-content">
+                <span class="hiw-badge">STEP 03</span>
+                <h3 class="hiw-card-title">Skip the Line</h3>
+                <p class="hiw-card-body">Walk in, collect from the express shelf, and get back to campus life. Zero waiting.</p>
+              </div>
+              <div class="hiw-card-icon" aria-hidden="true"><span>⚡</span></div>
+            </div>
+          </div>
+          <div class="hiw-progress-dots" id="hiw-progress-dots">
+            <button class="hiw-dot active" data-dot="0" aria-label="Step 1"></button>
+            <button class="hiw-dot" data-dot="1" aria-label="Step 2"></button>
+            <button class="hiw-dot" data-dot="2" aria-label="Step 3"></button>
+          </div>
+          <div class="hiw-tap-hint" id="hiw-tap-hint">Tap card to advance →</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ FOR VENDORS ═══════════════ -->
+  <section id="vendors" class="vendors-section">
+    <!-- Scroll-Animated Paper Airplane (FEATURE 5) -->
+    <div class="scroll-airplane-container" aria-hidden="true">
+      <svg class="scroll-plane-trail-svg" id="scroll-plane-trail-svg">
+        <path class="scroll-plane-trail-path" id="scroll-plane-trail-path" d="" fill="none" />
+      </svg>
+      <div class="scroll-plane-element" id="scroll-plane-element">
+        <div class="scroll-plane-inner">
+          <svg class="scroll-plane-shadow" viewBox="0 0 100 100">
+            <polygon points="5,50 95,15 60,55 95,15 55,90 50,60" fill="none" />
+            <polygon points="50,60 60,55 55,90" fill="none" />
+          </svg>
+          <svg class="scroll-plane-body" viewBox="0 0 100 100">
+            <polygon points="5,50 95,15 60,55 95,15 55,90 50,60" class="plane-wing-main" />
+            <polygon points="50,60 60,55 55,90" class="plane-wing-under" />
+          </svg>
+        </div>
+      </div>
+    </div>
+
+    <div class="container vendors-grid">
+      <div class="vendors-content scroll-reveal">
+        <span class="section-label">For vendors</span>
+        <h2 class="section-title">Serve more students. Waste less time.</h2>
+        <p class="section-desc">
+          Plug Campus Bite into your kitchen and turn the lunch rush into a steady flow of pre-paid orders.
+        </p>
+        <ul class="vendor-features" id="vendor-features-list">
+          <li><span class="check-icon">✓</span><span>Zero hardware — works on any tablet</span></li>
+          <li><span class="check-icon">✓</span><span>Flat fee, no commission per order</span></li>
+          <li><span class="check-icon">✓</span><span>Built for the campus calendar</span></li>
+        </ul>
+        <a href="#" class="btn btn-primary" id="become-partner-btn">
+          Become a partner
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+        </a>
+      </div>
+      <div class="vendor-stats">
+        <div class="stat-card scroll-reveal stat-stagger-1" id="stat-pickup"><div class="stat-value">4 min</div><div class="stat-label">avg. pickup</div></div>
+        <div class="stat-card scroll-reveal stat-stagger-2" id="stat-orders"><div class="stat-value">+180</div><div class="stat-label">orders / day</div></div>
+        <div class="stat-card scroll-reveal stat-stagger-3" id="stat-campuses"><div class="stat-value">24</div><div class="stat-label">campuses</div></div>
+        <div class="stat-card scroll-reveal stat-stagger-4" id="stat-rating"><div class="stat-value">4.9★</div><div class="stat-label">student rating</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ REVIEWS ═══════════════ -->
+  <section id="reviews" class="reviews-section">
+    <div class="container">
+      <div class="reviews-header">
+        <span class="section-label">Reviews</span>
+        <h2 class="section-title">What campus people say.</h2>
+      </div>
+      <div class="reviews-grid" id="reviews-grid">
+        <div class="review-card scroll-reveal rev-stagger-1" id="review-1">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">"Used to lose 20 min in line. Now I grab lunch and still make my lecture."</p>
+          <div class="review-author">Aisha — 2nd yr CS</div>
+        </div>
+        <div class="review-card scroll-reveal rev-stagger-2" id="review-2">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">"The pickup ETA is scary accurate. Coffee is always ready when I walk in."</p>
+          <div class="review-author">Tom — Engineering</div>
+        </div>
+        <div class="review-card scroll-reveal rev-stagger-3" id="review-3">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">"Genuinely changed how I eat on campus. North Hall café is unbeatable on this."</p>
+          <div class="review-author">Maya — Design</div>
+        </div>
+      </div>
+      <div class="reviews-cta">
+        <a href="#" class="btn btn-outline" id="leave-review-btn">
+          Leave a review
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ DOWNLOAD CTA ═══════════════ -->
+  <section id="download" class="download-section">
+    <div class="container">
+      <div class="download-card scroll-reveal">
+        <img src="/logo.png" alt="" class="download-logo float-slow" />
+        <h2 class="download-title">Ready to skip the line?</h2>
+        <p class="download-desc">Scan the QR or tap download to get Campus Bite on your phone.</p>
+        <div class="download-actions">
+          <div class="qr-placeholder" id="qr-placeholder">
+            <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <rect width="5" height="5" x="3" y="3" rx="1"/><rect width="5" height="5" x="16" y="3" rx="1"/><rect width="5" height="5" x="3" y="16" rx="1"/>
+              <path d="M21 16h-3a2 2 0 0 0-2 2v3"/><path d="M21 21v.01"/><path d="M12 7v3a2 2 0 0 1-2 2H7"/><path d="M3 12h.01"/><path d="M12 3h.01"/><path d="M12 16v.01"/><path d="M16 12h1"/><path d="M21 12v.01"/><path d="M12 21v-1"/>
+            </svg>
+            <span class="qr-label">Your QR here</span>
+          </div>
+          <div class="apk-card">
+            <div class="apk-card-top">
+              <span class="apk-android-badge">🤖 Android</span>
+              <span class="apk-version-tag">v1.0.0 · Free</span>
+            </div>
+            <div class="apk-app-row">
+              <img src="/logo.png" 
+                   alt="CampusBite" 
+                   class="apk-app-logo" />
+              <div>
+                <p class="apk-name">CampusBite</p>
+                <p class="apk-tagline">
+                  Skip the queue · Order ahead
+                </p>
+              </div>
+            </div>
+            <a class="apk-main-btn"
+               href="https://github.com/sujalsinghrathore77/campusbite-releases/releases/download/v1.0.0/CampusBite.apk"
+               target="_blank"
+               rel="noopener noreferrer">
+              <span class="apk-btn-left">
+                <span class="apk-icon">⬇️</span>
+                <span class="apk-btn-text">
+                  <small>Free · No signup needed</small>
+                  <strong>Download for Android</strong>
+                </span>
+              </span>
+              <span class="apk-arrow">→</span>
+            </a>
+            <div class="apk-install-steps">
+              <p class="apk-install-title">
+                📲 How to install:
+              </p>
+              <ol class="apk-steps-list">
+                <li>Tap Download button above</li>
+                <li>Settings → Security → 
+                    Enable "Install unknown apps"</li>
+                <li>Open downloaded file → 
+                    Tap Install → Open app 🎉</li>
+              </ol>
+            </div>
+            <div class="apk-stats-row">
+              <div class="apk-stat-item">
+                <b>4.9★</b><span>Rating</span>
+              </div>
+              <div class="apk-stat-divider"></div>
+              <div class="apk-stat-item">
+                <b>2K+</b><span>Students</span>
+              </div>
+              <div class="apk-stat-divider"></div>
+              <div class="apk-stat-item">
+                <b>Free</b><span>Always</span>
+              </div>
+            </div>
+            <div class="apk-playstore-pill">
+              🚀 Google Play Store · Coming Soon
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ FAQ ═══════════════ -->
+  <section id="faq" class="faq-section">
+    <div class="faq-hero scroll-reveal">
+      <span class="faq-hero-badge">We understand you have questions.</span>
+      <h2 class="faq-hero-title">
+        <span>Does CampusBite make</span>
+        <span>ordering even</span>
+        <span><span class="faq-better">BETTER</span> for you?</span>
+      </h2>
+      <div class="faq-emoji" aria-hidden="true">
+        <span class="faq-float">🤌</span>
+        <span class="faq-heart">❤️</span>
+      </div>
+      <button class="btn btn-faq" id="faq-scroll-btn">FAQ ↑</button>
+    </div>
+
+    <div class="faq-accordion-wrap scroll-reveal" id="faq-accordion">
+      <div class="faq-accordion-header">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v8"/><path d="m8 12 4 4 4-4"/></svg>
+        <span>Frequently Asked Questions</span>
+      </div>
+      <h3 class="faq-accordion-title">
+        <span>SKIP THE QUEUE.</span>
+        <span>WE'VE GOT ANSWERS.</span>
+      </h3>
+
+      <div class="faq-list" id="faq-list">
+        <div class="faq-item active" data-faq="0">
+          <button class="faq-question" id="faq-q-0" aria-expanded="true">
+            <span>How does CampusBite work?</span>
+            <span class="faq-chevron"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
+          </button>
+          <div class="faq-answer" id="faq-a-0">
+            <p>Browse your canteen menu, place an order, pick a time slot, and collect your food — no waiting in line, ever.</p>
+          </div>
+        </div>
+        <div class="faq-item" data-faq="1">
+          <button class="faq-question" id="faq-q-1" aria-expanded="false">
+            <span>Which colleges have CampusBite?</span>
+            <span class="faq-chevron"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
+          </button>
+          <div class="faq-answer" id="faq-a-1">
+            <p>We're live at select colleges in Bangalore. Enter your college on the homepage to check if we're available near you.</p>
+          </div>
+        </div>
+        <div class="faq-item" data-faq="2">
+          <button class="faq-question" id="faq-q-2" aria-expanded="false">
+            <span>Can I order in advance?</span>
+            <span class="faq-chevron"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
+          </button>
+          <div class="faq-answer" id="faq-a-2">
+            <p>Yes! Order up to 2 hours ahead and choose a pickup window — your food will be hot and ready exactly when you arrive.</p>
+          </div>
+        </div>
+        <div class="faq-item" data-faq="3">
+          <button class="faq-question" id="faq-q-3" aria-expanded="false">
+            <span>What payment options are available?</span>
+            <span class="faq-chevron"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
+          </button>
+          <div class="faq-answer" id="faq-a-3">
+            <p>UPI, debit/credit cards, and cash on pickup. Zero hidden charges.</p>
+          </div>
+        </div>
+        <div class="faq-item" data-faq="4">
+          <button class="faq-question" id="faq-q-4" aria-expanded="false">
+            <span>Can the canteen still serve walk-in students?</span>
+            <span class="faq-chevron"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
+          </button>
+          <div class="faq-answer" id="faq-a-4">
+            <p>Absolutely. CampusBite is built alongside the counter — it doesn't replace walk-ins, it just removes the wait for everyone.</p>
+          </div>
+        </div>
+        <div class="faq-item" data-faq="5">
+          <button class="faq-question" id="faq-q-5" aria-expanded="false">
+            <span>What if my order has an issue?</span>
+            <span class="faq-chevron"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
+          </button>
+          <div class="faq-answer" id="faq-a-5">
+            <p>Open the app within 30 minutes of pickup and flag it. We resolve all issues immediately, no questions asked.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-close-wrap">
+        <button class="btn btn-faq" id="faq-close-btn">Close ↓</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ FOOTER ═══════════════ -->
+  <footer id="site-footer" class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <img src="/logo.png" alt="Campus Bite" class="footer-logo" />
+        <span>© <span id="footer-year"></span> Campus Bite</span>
+      </div>
+      <div class="footer-links">
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+        <a href="#">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ═══════════════ DIAGONAL WIPE OVERLAY ═══════════════ -->
+  <div id="wipe-overlay" aria-hidden="true">
+    <div class="wipe-block wipe-block-1"></div>
+    <div class="wipe-block wipe-block-2"></div>
+    <div class="wipe-block wipe-block-3"></div>
+  </div>
+
+  <script src="/main.js" type="module"></script>
+</body>
+</html>

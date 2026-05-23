@@ -1,0 +1,15 @@
+{
+  "name": "campus-bite-landing",
+  "version": "1.0.0",
+  "description": "Campus Bite landing page rebuilt with vanilla HTML, CSS, and JavaScript using Vite.",
+  "author": "",
+  "license": "MIT",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^5.4.0"
+  }
+}
